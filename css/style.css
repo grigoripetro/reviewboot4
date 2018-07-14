@@ -74,51 +74,43 @@ header.content__title > p {
   padding-top: 3px;
 }
 
-.toggle-switch {
+.wz_review_step .toggle-switch {
   width: 26px;
   height: 13px;
 }
-
-.togglewithyesnospace {
+.wz_review_step .togglewithyesnospace {
   width: 100%;
 }
-
-.togglewithyesno .togglelabel::before {
+.wz_review_step .togglewithyesno .togglelabel::before {
   left: -19px;
   top: 1px;
 }
-
-.togglewithyesno .togglelabel::after {
+.wz_review_step .togglewithyesno .togglelabel::after {
   right: -56px;
   top: 1px;
 }
-
-.toggle-switch__helper {
+.wz_review_step .toggle-switch__helper {
   position: absolute;
   height: 11px;
   width: 100%;
   margin-left: 5px;
 }
-
-.toggle-switch__helper:before {
+.wz_review_step .toggle-switch__helper:before {
   background-color: #e0e0e0;
   top: 1px;
   height: 100%;
   width: 100%;
   border-radius: 10px;
 }
-
-.toggle-switch__checkbox:checked ~ .toggle-switch__helper:after {
+.wz_review_step .toggle-switch__checkbox:checked ~ .toggle-switch__helper:after {
   left: calc(100% - 14px);
   background-color: #39bbb0;
 }
-
-.toggle-switch__helper:after {
+.wz_review_step .toggle-switch__helper:after {
   width: 14px;
   height: 14px;
   top: -1px;
 }
-
 .wz_review_step .alerticon {
   font-size: 13px;
   color: #D0021B;
@@ -126,6 +118,11 @@ header.content__title > p {
 .wz_review_step .checkicon {
   font-size: 12px;
   color: #2196F3;
+}
+@media screen and (max-width: 840px) {
+  .wz_review_step .checkicon {
+    font-size: 10px;
+  }
 }
 .wz_review_step .borrowers {
   position: relative;
@@ -164,7 +161,7 @@ header.content__title > p {
   color: #1D2C4C;
   font-weight: 400;
 }
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .wz_review_step .borrowers tfoot td {
     font-size: 10px;
   }
@@ -173,9 +170,19 @@ header.content__title > p {
   font-size: 10px;
   color: #D0021B;
 }
+@media screen and (max-width: 840px) {
+  .wz_review_step .borrowers span.in-pro {
+    font-size: 8px;
+  }
+}
 .wz_review_step .borrowers span.completed {
   font-size: 10px;
   color: #2196F3;
+}
+@media screen and (max-width: 840px) {
+  .wz_review_step .borrowers span.completed {
+    font-size: 8px;
+  }
 }
 .wz_review_step .borrowers span.mo {
   font-size: 7px;

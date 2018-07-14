@@ -76,44 +76,45 @@ header {
     padding-left: 19px;
     padding-top: 3px;
 }
-.toggle-switch {
-    width: 26px;
-    height: 13px;
-}
-.togglewithyesnospace {
-    width: 100%;
-}
-.togglewithyesno .togglelabel::before {
-    left: -19px;
-    top: 1px;
-}
-.togglewithyesno .togglelabel::after {
-    right: -56px;
-    top: 1px;
-}
-.toggle-switch__helper {
-    position: absolute;
-    height: 11px;
-    width: 100%;
-    margin-left: 5px;
-}
-.toggle-switch__helper:before {
-    background-color: #e0e0e0;
-    top: 1px;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-.toggle-switch__checkbox:checked ~ .toggle-switch__helper:after {
-    left: calc(100% - 14px);
-    background-color: #39bbb0;
-}
-.toggle-switch__helper:after {
-    width: 14px;
-    height: 14px;
-    top: -1px;
-}
+
 .wz_review_step {
+    .toggle-switch {
+        width: 26px;
+        height: 13px;
+    }
+    .togglewithyesnospace {
+        width: 100%;
+    }
+    .togglewithyesno .togglelabel::before {
+        left: -19px;
+        top: 1px;
+    }
+    .togglewithyesno .togglelabel::after {
+        right: -56px;
+        top: 1px;
+    }
+    .toggle-switch__helper {
+        position: absolute;
+        height: 11px;
+        width: 100%;
+        margin-left: 5px;
+    }
+    .toggle-switch__helper:before {
+        background-color: #e0e0e0;
+        top: 1px;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .toggle-switch__checkbox:checked ~ .toggle-switch__helper:after {
+        left: calc(100% - 14px);
+        background-color: #39bbb0;
+    }
+    .toggle-switch__helper:after {
+        width: 14px;
+        height: 14px;
+        top: -1px;
+    }
     .alerticon {
         font-size: 13px;
         color: $alertRed_c;
@@ -121,6 +122,9 @@ header {
     .checkicon {
         font-size: 12px;
         color: $lightBlue_c;
+        @media screen and (max-width: 840px) {
+            font-size: 10px;
+        }
     }
     .borrowers {
         position: relative;
@@ -157,7 +161,7 @@ header {
             font-size: 12px;
             color: #1D2C4C;
             font-weight: 400;
-            @media screen and (max-width: 835px) {
+            @media screen and (max-width: 840px) {
                 font-size: 10px;
             }
 
@@ -165,10 +169,16 @@ header {
         span.in-pro {
             font-size: 10px;
             color: $alertRed_c;
+            @media screen and (max-width: 840px) {
+                font-size: 8px;
+            }
         }
         span.completed {
             font-size: 10px;
             color: $lightBlue_c;
+            @media screen and (max-width: 840px) {
+                font-size: 8px;
+            }
         }
         span.mo {
             font-size: 7px;
