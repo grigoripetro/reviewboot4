@@ -147,6 +147,11 @@ header.content__title > p {
 .wz_review_step .borrowers tbody td {
   font-size: 12px;
 }
+@media screen and (max-width: 835px) {
+  .wz_review_step .borrowers tbody td {
+    font-size: 10px;
+  }
+}
 .wz_review_step .borrowers .table-striped tbody tr:nth-of-type(odd) {
   background-color: #FAFAFA;
 }
@@ -158,6 +163,11 @@ header.content__title > p {
   font-size: 12px;
   color: #1D2C4C;
   font-weight: 400;
+}
+@media screen and (max-width: 835px) {
+  .wz_review_step .borrowers tfoot td {
+    font-size: 10px;
+  }
 }
 .wz_review_step .borrowers span.in-pro {
   font-size: 10px;
