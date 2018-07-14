@@ -112,8 +112,23 @@ header.content__title > p {
   top: -1px;
 }
 .wz_review_step .alerticon {
-  font-size: 13px;
+  font-size: 12px;
   color: #D0021B;
+}
+@media screen and (max-width: 850px) {
+  .wz_review_step .alerticon {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .wz_review_step .alerticon {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .wz_review_step .alerticon {
+    font-size: 8px;
+  }
 }
 .wz_review_step .checkicon {
   font-size: 12px;
