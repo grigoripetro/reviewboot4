@@ -146,7 +146,7 @@ header.content__title > p {
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #A2A2A2;
+  color: #A1A1A1;
 }
 .wz_review_step .borrowers tbody td {
   font-size: 12px;
@@ -192,7 +192,7 @@ header.content__title > p {
   top: 15px;
   right: 105px;
   font-size: 10px;
-  color: #A2A2A2;
+  color: #A1A1A1;
 }
 .wz_review_step .rv_header_txt {
   /* BORROWER: */
@@ -248,25 +248,25 @@ header.content__title > p {
 }
 .wz_review_step .rv_left thead td, .wz_review_step .rv_left tfoot td {
   text-transform: uppercase;
-  color: #A2A2A2;
+  color: #A1A1A1;
   font-size: 10px;
-  padding: 19px 9px;
+  padding: 18px 9px;
   letter-spacing: 1px;
   vertical-align: middle;
 }
 .wz_review_step .rv_left tbody td {
   font-size: 13px;
   color: #1E1D4D;
-  padding: 10px;
+  padding: 7px 10px;
 }
 .wz_review_step .rv_left tbody td span {
   font-size: 11px;
   font-style: italic;
-  color: #A2A2A2;
+  color: #A1A1A1;
 }
 .wz_review_step .rv_left tbody td span.per {
   font-size: 13px;
-  color: #A2A2A2;
+  color: #A1A1A1;
   font-style: normal;
 }
 .wz_review_step .rv_left .table-striped tbody tr:nth-of-type(odd) {
@@ -287,7 +287,7 @@ header.content__title > p {
   color: #1E1D4D;
   letter-spacing: 1.2px;
   margin: 0;
-  font-weight: bold;
+  font-weight: 400;
   margin-top: 5px;
 }
 .wz_review_step .rv_left .checkicon {
@@ -311,21 +311,21 @@ header.content__title > p {
 }
 .wz_review_step .rv_right thead td {
   text-transform: uppercase;
-  color: #A2A2A2;
+  color: #A1A1A1;
   font-size: 10px;
-  padding: 16px 9px;
+  padding: 14px 9px;
   letter-spacing: 1px;
   vertical-align: middle;
 }
 .wz_review_step .rv_right tbody td {
   font-size: 11px;
   color: #1E1D4D;
-  padding: 4px 10px;
+  padding: 3.5px 10px;
 }
 .wz_review_step .rv_right tbody td span {
   font-size: 11px;
   font-style: italic;
-  color: #A2A2A2;
+  color: #A1A1A1;
 }
 .wz_review_step .rv_right tbody td.first {
   padding-top: 15px;
