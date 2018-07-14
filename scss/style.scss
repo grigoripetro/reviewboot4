@@ -201,7 +201,10 @@ header {
             font-size: 10px;
             color: $tableGrey_c;
             @media screen and (max-width: 840px) {
-                right: 10vw;
+                right: 9vw;
+            }
+            @media screen and (max-width: 750px) {
+                right: 6vw;
             }
         }
     }

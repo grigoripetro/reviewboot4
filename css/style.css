@@ -207,7 +207,12 @@ header.content__title > p {
 }
 @media screen and (max-width: 840px) {
   .wz_review_step .borrowers .ratios {
-    right: 10vw;
+    right: 9vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wz_review_step .borrowers .ratios {
+    right: 6vw;
   }
 }
 .wz_review_step .rv_header_txt {
