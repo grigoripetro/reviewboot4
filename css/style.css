@@ -1,0 +1,103 @@
+/*
+
+font-family's are as follows
+
+font-family: Roboto;
+font-family: 'AvenirDemiBold';
+font-family: 'AvenirNextRegular';
+font-family: 'AvenirNextMedium';
+
+
+*/
+body {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #707070;
+  background-color: #f3f3f3;
+}
+
+html {
+  font-size: 13px;
+}
+
+header.content__title > h1 {
+  line-height: 130%;
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: "AvenirDemiBold";
+  color: #1D1B4C;
+}
+
+.content:not(.content--boxed):not(.content--full) {
+  padding: 0;
+}
+
+.transparentborder {
+  border: none;
+}
+
+.wz_review_step .alerticon {
+  font-size: 20px;
+  color: #D0021B;
+}
+.wz_review_step .checkicon {
+  font-size: 20px;
+  color: #2196F3;
+}
+.wz_review_step .rv_header_txt {
+  /* BORROWER: */
+  opacity: 0.57;
+  font-family: "AvenirDemiBold";
+  font-size: 11px;
+  color: #5A5A5A;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+.wz_review_step .rv_sectiontitle_txt {
+  /* Borrowers: */
+  font-family: "AvenirNextMedium";
+  font-size: 20px;
+  color: #1E1D4D;
+}
+.wz_review_step .fullbtn {
+  display: block;
+  width: 100%;
+}
+.wz_review_step .btn-submit_rv {
+  background-color: #1E1D4D;
+  box-shadow: none;
+  font-family: "AvenirNextRegular";
+  font-size: 16px;
+}
+.wz_review_step hr.dashed {
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.wz_review_step .rv_section {
+  padding-bottom: 50px;
+}
+.wz_review_step .rv_suggestion {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  max-height: 100%;
+  align-items: center;
+  border: dashed 1px #2196F3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.wz_review_step .rv_suggestion .suggestion-box-text {
+  font-family: "AvenirNextRegular";
+  color: #2196F3;
+  font-size: 14px;
+  font-style: italic;
+}
+.wz_review_step .rv_suggestion .suggestion-box-icon {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

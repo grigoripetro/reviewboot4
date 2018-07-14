@@ -26,12 +26,6 @@ html {
     font-size: 13px;
 }
 
-.sidebar {
-    background-color: rgba(0, 0, 0, 0.1);
-    position: fixed;
-    z-index: 2;
-}
-
 header {
     &.content__title>h1 {
         line-height: 130%;
@@ -41,6 +35,10 @@ header {
         font-family: "AvenirDemiBold";
         color: #1D1B4C;
     }
+}
+
+.content:not(.content--boxed):not(.content--full) {
+    padding: 0;
 }
 
 .transparentborder {
@@ -86,33 +84,30 @@ header {
             border-top: 1px dashed rgba(0, 0, 0, 0.2);
         }
     }
-  .rv_section{
-    padding-bottom: 50px;
-  }
-  
-  .rv_suggestion{
-    flex-direction: row;
-    box-sizing: border-box;
-    display: flex; max-height: 100%;
-   // place-content: center space-between;
-    align-items: center;
-    
-    border: dashed 1px #2196F3;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    
-    .suggestion-box-text{
-  
-    font-family: 'AvenirNextRegular';
-    color: #2196F3;
-    font-size: 14px;
-      font-style: italic;
-
-    }
-    
-    .suggestion-box-icon{
+    .rv_section {
+        padding-bottom: 50px;
+    }  
+    .rv_suggestion {
+        flex-direction: row;
+        box-sizing: border-box;
+        display: flex; max-height: 100%;
+        //place-content: center space-between;
+        align-items: center;
+        
+        border: dashed 1px #2196F3;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        
+        .suggestion-box-text {
+      
+        font-family: 'AvenirNextRegular';
+        color: #2196F3;
+        font-size: 14px;
+        font-style: italic;
+    }    
+    .suggestion-box-icon {
       margin-right: 20px;
     }
   }
