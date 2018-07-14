@@ -137,10 +137,6 @@ header.content__title > p {
   padding: 8px 12px;
   padding-right: 0;
   border: none;
-  border-right: 1px solid #F4F4F4;
-}
-.wz_review_step .borrowers td.no-bor {
-  border: none;
 }
 .wz_review_step .borrowers thead td {
   font-size: 10px;
@@ -161,7 +157,7 @@ header.content__title > p {
 .wz_review_step .borrowers tfoot td {
   font-size: 12px;
   color: #1D2C4C;
-  font-weight: bold;
+  font-weight: 400;
 }
 .wz_review_step .borrowers span.in-pro {
   font-size: 10px;
@@ -185,9 +181,7 @@ header.content__title > p {
 .wz_review_step .borrowers .ratios {
   position: absolute;
   width: 135px;
-  height: 225px;
-  border-left: 1px solid #F1F1F1;
-  border-right: 1px solid #F1F1F1;
+  height: 40px;
   padding: 5px 12px;
   top: 15px;
   right: 105px;
@@ -388,7 +382,7 @@ header.content__title > p {
   margin-top: 12px;
 }
 .wz_review_step .rv_suggestion .suggestion-sub-text span {
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 .wz_review_step .rv_suggestion a, .wz_review_step .rv_suggestion a:hover {
