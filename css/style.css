@@ -129,10 +129,16 @@ header.content__title > p {
 }
 .wz_review_step .borrowers table {
   width: 99.5%;
+  position: relative;
+  top: -41px;
 }
 .wz_review_step .borrowers td {
   padding: 8px 12px;
   padding-right: 0;
+  border: none;
+  border-right: 1px solid #F1F1F1;
+}
+.wz_review_step .borrowers td.no-bor {
   border: none;
 }
 .wz_review_step .borrowers thead td {
@@ -140,6 +146,9 @@ header.content__title > p {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #A1A1A1;
+}
+.wz_review_step .borrowers thead td.large {
+  padding-bottom: 20px;
 }
 .wz_review_step .borrowers tbody td {
   font-size: 12px;
@@ -194,26 +203,6 @@ header.content__title > p {
 }
 .wz_review_step .borrowers .form-control {
   font-size: 10px;
-}
-.wz_review_step .borrowers .ratios {
-  position: absolute;
-  width: 135px;
-  height: 40px;
-  padding: 5px 12px;
-  top: 15px;
-  right: 105px;
-  font-size: 10px;
-  color: #A1A1A1;
-}
-@media screen and (max-width: 840px) {
-  .wz_review_step .borrowers .ratios {
-    right: 9vw;
-  }
-}
-@media screen and (max-width: 750px) {
-  .wz_review_step .borrowers .ratios {
-    right: 6vw;
-  }
 }
 .wz_review_step .rv_header_txt {
   /* BORROWER: */

@@ -2,6 +2,7 @@ $darkBlue_c: #1E1D4D;
 $lightBlue_c: #2196F3;
 $alertRed_c: #D0021B;
 $tableGrey_c: #A1A1A1;
+$borderGrey_c: #F1F1F1;
 /*
 
 font-family's are as follows
@@ -130,10 +131,16 @@ header {
         position: relative;
         table {
             width: 99.5%;
+            position: relative;
+            top: -41px;
         }
         td {
             padding: 8px 12px;
             padding-right: 0;
+            border: none;
+            border-right: 1px solid $borderGrey_c;
+        }
+        td.no-bor {
             border: none;
         }
         thead td {
@@ -141,6 +148,9 @@ header {
             letter-spacing: 1px;
             text-transform: uppercase;
             color: $tableGrey_c;
+        }
+        thead td.large {
+            padding-bottom: 20px;
         }
         tbody td {
             font-size: 12px;
@@ -190,22 +200,6 @@ header {
         }
         .form-control {
             font-size: 10px;
-        }
-        .ratios {
-            position: absolute;
-            width: 135px;
-            height: 40px;
-            padding: 5px 12px;
-            top: 15px;
-            right: 105px;
-            font-size: 10px;
-            color: $tableGrey_c;
-            @media screen and (max-width: 840px) {
-                right: 9vw;
-            }
-            @media screen and (max-width: 750px) {
-                right: 6vw;
-            }
         }
     }
     .rv_header_txt {
