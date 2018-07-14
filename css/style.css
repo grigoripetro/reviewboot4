@@ -205,6 +205,11 @@ header.content__title > p {
   font-size: 10px;
   color: #A1A1A1;
 }
+@media screen and (max-width: 840px) {
+  .wz_review_step .borrowers .ratios {
+    right: 10vw;
+  }
+}
 .wz_review_step .rv_header_txt {
   /* BORROWER: */
   opacity: 0.57;
