@@ -10,7 +10,7 @@ font-family: 'AvenirNextMedium';
 
 */
 body {
-  font-family: "Roboto";
+  font-family: "AvenirNextRegular";
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -28,7 +28,7 @@ header.content__title > h1 {
   font-size: 2.5rem;
   margin: 0;
   font-family: "AvenirDemiBold";
-  color: #1D1B4C;
+  color: #1E1D4D;
 }
 
 .content:not(.content--boxed):not(.content--full) {
