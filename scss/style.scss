@@ -42,12 +42,12 @@ header {
 .clear {
     clear: both;
 }
+.p-left-0 {
+    padding-left: 0 !important;
+}
 .container {
     width: 877px;
     padding: 0;
-}
-.container * {
-    font-family: "AvenirNextRegular";
 }
 .content {
     &:not(.content--boxed):not(.content--full) {
@@ -69,15 +69,126 @@ header {
 .transparentborder {
     border: none;
 }
-
+.transparentborder {
+    border: none;
+    padding: 0;
+    padding-left: 19px;
+    padding-top: 3px;
+}
+.toggle-switch {
+    width: 26px;
+    height: 13px;
+}
+.togglewithyesnospace {
+    width: 100%;
+}
+.togglewithyesno .togglelabel::before {
+    left: -19px;
+    top: 1px;
+}
+.togglewithyesno .togglelabel::after {
+    right: -56px;
+    top: 1px;
+}
+.toggle-switch__helper {
+    position: absolute;
+    height: 11px;
+    width: 100%;
+    margin-left: 5px;
+}
+.toggle-switch__helper:before {
+    background-color: #e0e0e0;
+    top: 1px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.toggle-switch__checkbox:checked ~ .toggle-switch__helper:after {
+    left: calc(100% - 14px);
+    background-color: #39bbb0;
+}
+.toggle-switch__helper:after {
+    width: 14px;
+    height: 14px;
+    top: -1px;
+}
 .wz_review_step {
     .alerticon {
-        font-size: 20px;
+        font-size: 13px;
         color: $alertRed_c;
     }
     .checkicon {
-        font-size: 20px;
+        font-size: 12px;
         color: $lightBlue_c;
+    }
+    .borrowers {
+        position: relative;
+        table {
+            width: 99.5%;
+        }
+        td {
+            padding: 8px 12px;
+            padding-right: 0;
+            border: none;
+            border-right: 1px solid #F4F4F4;
+        }
+        td.no-bor {
+            border: none;
+        }
+        thead td {
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #A2A2A2;
+        }
+        tbody td {
+            font-size: 12px;
+        }
+        .table-striped {
+          tbody tr:nth-of-type(odd) {
+            background-color: #FAFAFA;
+          }
+        }
+        tfoot {
+            border-top: 1px solid #D6D6D6;
+            border-bottom: 1px solid #D6D6D6;
+        }
+        tfoot td {
+            font-size: 12px;
+            color: #1D2C4C;
+            font-weight: bold;
+        }
+        span.in-pro {
+            font-size: 10px;
+            color: #D0021B;
+        }
+        span.completed {
+            font-size: 10px;
+            color: #2196F3;
+        }
+        span.mo {
+            font-size: 7px;
+            color: #5A5A5A;
+        }
+        span.warn {
+            font-size: 12px;
+            color: #D0021B !important;
+        }
+        .form-control {
+            font-size: 10px;
+        }
+        .ratios {
+            position: absolute;
+            width: 135px;
+            height: 225px;
+            border-left: 1px solid #F1F1F1;
+            border-right: 1px solid #F1F1F1;
+            padding: 5px 12px;
+            top: 15px;
+            right: 105px;
+            font-size: 10px;
+            color: #A2A2A2;
+        }
     }
     .rv_header_txt {
         /* BORROWER: */
@@ -93,6 +204,13 @@ header {
         font-family: 'AvenirNextMedium';
         font-size: 20px;
         color: #1E1D4D;
+    }
+    .rv_sectiontitle_txt1 {
+        /* Borrowers: */
+        font-family: 'AvenirNextRegular';
+        font-size: 19px;
+        color: #1E1D4D;
+        font-style: italic;
     }
     .fullbtn {
         display: block;
@@ -115,6 +233,7 @@ header {
     .rv_left {
         float: left;
         width: 57%;
+        font-family: "AvenirNextRegular";
         td, th {
             border: none;
         }
@@ -126,9 +245,9 @@ header {
         }
         thead td, tfoot td {
             text-transform: uppercase;
-            color: #5A5A5A;
+            color: #A2A2A2;
             font-size: 10px;
-            padding: 17px 9px;
+            padding: 19px 9px;
             letter-spacing: 1px;
             vertical-align: middle;
         }
@@ -140,11 +259,11 @@ header {
         tbody td span {
             font-size: 11px;
             font-style: italic;
-            color: #5A5A5A;
+            color: #A2A2A2;
         }
         tbody td span.per {
             font-size: 13px;
-            color: #5A5A5A;
+            color: #A2A2A2;
             font-style: normal;
         }
         .table-striped {
@@ -160,18 +279,79 @@ header {
             font-size: 8px;
             color: #424242;
             cursor: pointer;
+            letter-spacing: 0.5px;
         }
-        h6 {
+        h5 {
             font-size: 16px;
             color: #1E1D4D;
             letter-spacing: 1.2px;
             margin: 0;
+            font-weight: bold;
             margin-top: 5px;
+        }
+        .checkicon {
+            position: relative;
+            top: 4px;
         }
     }
     .rv_right {
         float: right;
-        width: 43%;
+        width: 42%;
+        margin-right: 0.5%;
+        font-family: "AvenirNextRegular";
+        padding: 9px;
+        border: 1px solid #E3E3E3;
+        border-radius: 3px;
+        td, th {
+            border: none;
+        }
+        thead {
+            border-bottom: 2px solid #EEE;
+        }
+        thead td {
+            text-transform: uppercase;
+            color: #A2A2A2;
+            font-size: 10px;
+            padding: 16px 9px;
+            letter-spacing: 1px;
+            vertical-align: middle;
+        }
+        tbody td {
+            font-size: 11px;
+            color: #1E1D4D;
+            padding: 4px 10px;
+        }
+        tbody td span {
+            font-size: 11px;
+            font-style: italic;
+            color: #A2A2A2;
+        }
+        tbody td.first {
+            padding-top: 15px;
+        }
+        thead td span.cst_h6 {
+            font-size: 9px;
+            color: #1E1D4D;
+            font-style: normal;
+        }
+        h2 {
+            font-size: 31px;
+            color: #1E1D4D;
+            letter-spacing: 0.3px;
+            margin: 0;
+        }
+        h2 span {
+            font-size: 17.5px;
+            display: inline-block;
+            top: -7px;
+            position: relative;
+        }
+        h6 {
+            font-size: 13px;
+            color: #1E1D4D;
+            letter-spacing: 1px;
+            margin: 0;
+        }
     }
     .rv_suggestion {
         flex-direction: row;
@@ -204,7 +384,7 @@ header {
             font-style: normal;
             line-height: 1.5;
             display: inline-block;
-            margin-top: 2px;
+            margin-top: 5px;
         }
         .suggest_first {
             margin-top: 12px;
